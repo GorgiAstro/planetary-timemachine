@@ -1,0 +1,4 @@
+git+git://github.com/GorgiAstro/ccsds-cic-odm-adm-py
+numpy
+pandas
+tqdm

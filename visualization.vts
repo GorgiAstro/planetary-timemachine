@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Revision="8185">
+ <General Name="" StartDateTime="42983 36000.000000" EndDateTime="42983 39600.000000"/>
+ <MetaData>
+  <Description></Description>
+ </MetaData>
+ <MonitorConfiguration>
+  <Monitor X="1920" Y="0" Height="1080" Width="1920"/>
+  <Monitor X="0" Y="0" Height="1080" Width="1920"/>
+  <Monitor X="3840" Y="0" Height="1080" Width="1920"/>
+ </MonitorConfiguration>
+ <StartOptions TimeRatio="30" UseStateTimeRatio="0" SysTimeSynced="0" Paused="0" Looped="1" Minimized="0" Hidden="0" AutoClosed="0"/>
+ <BrokerOptions WindowMode="Undocked" Collapsed="0" AlwaysOnTop="0" XPos="1993" YPos="27" Width="1847" Height="398" ActiveTab="0" HiddenTabs=""/>
+ <TimelineOptions ProjectLocked="1" CursorLocked="0" CursorRatio="0" ViewStart="33282 0.000000" ViewSpan="0" DateFormat="ISODate" NoBadgeFiltered="0" BadgeFiltered="">
+  <TimelineScenario Name="Scenario" Pos="0" Size="23"/>
+  <TimelineFile Name="Mars_OEM_EME2000.txt" Pos="1" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Mars_AEM_EME2000.txt" Pos="2" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Moon_OEM_EME2000.txt" Pos="3" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Moon_AEM_EME2000.txt" Pos="4" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Earth_OEM_EME2000.txt" Pos="5" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Earth_AEM_EME2000.txt" Pos="6" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Mercury_OEM_EME2000.txt" Pos="7" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Mercury_AEM_EME2000.txt" Pos="8" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Saturn_OEM_EME2000.txt" Pos="9" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Saturn_AEM_EME2000.txt" Pos="10" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Jupiter_OEM_EME2000.txt" Pos="11" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Jupiter_AEM_EME2000.txt" Pos="12" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Uranus_OEM_EME2000.txt" Pos="13" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Uranus_AEM_EME2000.txt" Pos="14" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Neptune_OEM_EME2000.txt" Pos="15" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Neptune_AEM_EME2000.txt" Pos="16" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Venus_OEM_EME2000.txt" Pos="17" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+  <TimelineFile Name="Venus_AEM_EME2000.txt" Pos="18" Size="18" Badges="" Mode="DEFAULT" Overlay="false"/>
+ </TimelineOptions>
+ <Sky>
+  <Sun>
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="0.862745 0.862745 0" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="0.501961 0.501961 0" FillColor="0 0 0" FillOpacity="50"/>
+  </Sun>
+  <StarCatalog CatalogMode="Builtin">
+   <Track Color="1 1 1" PenStyle="DotLine" PenWidth="1"/>
+  </StarCatalog>
+ </Sky>
+ <ToBeUsedApps>
+  <Application Name="SurfaceView" Id="0" Label="" AutoStarted="1"/>
+  <Application Name="Celestia" Id="1" Label="" AutoStarted="1"/>
+ </ToBeUsedApps>
+ <Entities>
+  <Body Name="Mars" ParentPath="Sol">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="0.251499 0 1" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="0.168002 1 0" FillColor="0.583993 1 0.499992" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Mars_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Mars_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <WMSTileMapLayer Name="MDIM 21 color" Url="https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/mars_simp_cyl.map&amp;CRS=EPSG:4326&amp;FORMAT=image/png&amp;LAYERS=MDIM21_color&amp;REQUEST=GetMap&amp;SERVICE=WMS&amp;STYLES=default&amp;VERSION=1.3.0" ProjectionName="equirectangular"/>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+  <Body Name="Moon" ParentPath="Sol/Earth">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="1 0.578836 0" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="0 1 0.576837" FillColor="0.499992 1 0.788418" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Moon_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Moon_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <WMSTileMapLayer Name="LROC WAC" Url="https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/earth/moon_simp_cyl.map&amp;CRS=EPSG:4326&amp;FORMAT=image/png&amp;LAYERS=LROC_WAC&amp;REQUEST=GetMap&amp;SERVICE=WMS&amp;STYLES=default&amp;VERSION=1.3.0" ProjectionName="equirectangular"/>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+  <Body Name="Earth" ParentPath="Sol">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="0.284993 0 1" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="1 0 0.663661" FillColor="1 0.499992 0.83183" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Earth_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Earth_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <WMSTileMapLayer Name="EOX Sentinel Cloudless" Url="https://tiles.maps.eox.at/wms?CRS=EPSG:4326&amp;FORMAT=image/png&amp;LAYERS=s2cloudless-2019&amp;REQUEST=GetMap&amp;SERVICE=WMS&amp;STYLES=default&amp;VERSION=1.3.0" ProjectionName="equirectangular"/>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+  <Body Name="Mercury" ParentPath="Sol">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="1 0.0678264 0" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="0.366827 1 0" FillColor="0.683406 1 0.499992" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Mercury_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Mercury_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <WMSTileMapLayer Name="MESSENGER MDIS color mosaic" Url="https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mercury/mercury_simp_cyl.map&amp;CRS=EPSG:4326&amp;FORMAT=image/png&amp;LAYERS=MESSENGER_Color&amp;REQUEST=GetMap&amp;SERVICE=WMS&amp;STYLES=default&amp;VERSION=1.3.0" ProjectionName="equirectangular"/>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+  <Body Name="Saturn" ParentPath="Sol">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="1 0.888334 0" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="0.457832 1 0" FillColor="0.728908 1 0.499992" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Saturn_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Saturn_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+  <Body Name="Jupiter" ParentPath="Sol">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="0.15967 1 0" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="1 0 0.0966659" FillColor="1 0.499992 0.548333" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Jupiter_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Jupiter_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+  <Body Name="Uranus" ParentPath="Sol">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="0 0.969497 1" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="0 0.82884 1" FillColor="0.499992 0.914412 1" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Uranus_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Uranus_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+  <Body Name="Neptune" ParentPath="Sol">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="0 0.404669 1" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="0 1 0.505837" FillColor="0.499992 1 0.752911" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Neptune_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Neptune_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+  <Body Name="Venus" ParentPath="Sol">
+   <Prop2d>
+    <Icon Anchor="CENTER" Size="MEDIUM" Opacity="100">
+     <Font Size="MEDIUM" Color="1 1 1"/>
+     <ImageLayer Type="Default"/>
+    </Icon>
+   </Prop2d>
+   <Track Color="1 0 0.0521706" PenStyle="SolidLine" PenWidth="2"/>
+   <VisibilityCircle ContourColor="0.959503 0 1" FillColor="0.979751 0.499992 1" FillOpacity="60"/>
+   <EphemerisMode Mode="User"/>
+   <Geometry>
+    <Position>
+     <Value>
+      <File Name="CIC-data/Venus_OEM_EME2000.txt"/>
+     </Value>
+    </Position>
+    <Orientation>
+     <Quaternion>
+      <Value>
+       <File Name="CIC-data/Venus_AEM_EME2000.txt"/>
+      </Value>
+     </Quaternion>
+    </Orientation>
+   </Geometry>
+   <Layers>
+    <WMSTileMapLayer Name="Magellan color" Url="https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/venus/venus_simp_cyl.map&amp;CRS=EPSG:4326&amp;FORMAT=image/png&amp;LAYERS=MAGELLAN_color&amp;REQUEST=GetMap&amp;SERVICE=WMS&amp;STYLES=default&amp;VERSION=1.3.0" ProjectionName="equirectangular"/>
+    <BuiltinLayer Name="defaultLayer"/>
+   </Layers>
+  </Body>
+ </Entities>
+ <Events/>
+ <States>
+  <Instant Time="33282 0" TimeRatio="1" Label="Initial state">
+   <AppState Id="0">
+    <Command Str="CMD PROP SceneReference &quot;Sol/Mars&quot;"/>
+    <Command Str="CMD PROP WindowGeometry 1990 432 1066 648"/>
+    <Command Str="CMD PROP SelectObject &quot;Sol/Earth/Moon&quot;"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Mars&quot; false"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Earth/Moon&quot; false"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Earth&quot; false"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Mercury&quot; false"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Saturn&quot; false"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Jupiter&quot; false"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Uranus&quot; false"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Neptune&quot; false"/>
+    <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT TrackVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllStationTextVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationContourVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllSensorStationSurfaceVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllStationSatelliteLinksVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllPoiVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiContourVisible &quot;Sol/Venus&quot; false"/>
+    <Command Str="CMD STRUCT AllRoiFillVisible &quot;Sol/Venus&quot; false"/>
+   </AppState>
+   <AppState Id="1">
+    <Command Str="CMD PROP ForceLegacy3dsReader false"/>
+    <Command Str="CMD PROP WindowGeometry 2986 432 853 648"/>
+    <Command Str="CMD PROP CameraDesc bodyfixed &quot;Sol/Mars/Mars_Axes&quot; nil -0.003553719305380 -0.000000007762981 0.000000005559644 -0.500000056746824 -0.500000331160790 -0.500000472989933 0.500000419344623 0.424224436283112"/>
+   </AppState>
+  </Instant>
+ </States>
+</Project>

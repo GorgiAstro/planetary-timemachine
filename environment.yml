@@ -1,0 +1,10 @@
+name: planetary
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python
+  - orekit
+  - pip
+  - pip:
+    - -r file:requirements.txt
