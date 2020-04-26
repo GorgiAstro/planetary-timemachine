@@ -316,7 +316,6 @@
    <AppState Id="0">
     <Command Str="CMD PROP SceneReference &quot;Sol/Mars&quot;"/>
     <Command Str="CMD PROP WindowGeometry 1990 432 1066 648"/>
-    <Command Str="CMD PROP SelectObject &quot;Sol/Earth/Moon&quot;"/>
     <Command Str="CMD STRUCT SubEntityPointVisible &quot;Sol/Mars&quot; false"/>
     <Command Str="CMD STRUCT TrackVisible &quot;Sol/Mars&quot; false"/>
     <Command Str="CMD STRUCT AllStationVisible &quot;Sol/Mars&quot; false"/>
@@ -420,7 +419,25 @@
    <AppState Id="1">
     <Command Str="CMD PROP ForceLegacy3dsReader false"/>
     <Command Str="CMD PROP WindowGeometry 2986 432 853 648"/>
-    <Command Str="CMD PROP CameraDesc bodyfixed &quot;Sol/Mars/Mars_Axes&quot; nil -0.003553719305380 -0.000000007762981 0.000000005559644 -0.500000056746824 -0.500000331160790 -0.500000472989933 0.500000419344623 0.424224436283112"/>
+    <Command Str="CMD PROP CameraDesc bodyfixed &quot;Sol/Mars/Mars_Axes&quot; nil -0.000631602299057 -0.000440917716033 0.000606188814617 -0.777061940842808 0.396433050361798 -0.183000613603706 -0.453351547798468 0.911972761154175"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Mars&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Mars&quot; true"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Earth/Moon&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Earth/Moon&quot; true"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Earth&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Earth&quot; true"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Mercury&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Mercury&quot; true"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Saturn&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Saturn&quot; true"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Jupiter&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Jupiter&quot; true"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Uranus&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Uranus&quot; true"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Neptune&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Neptune&quot; true"/>
+    <Command Str="CMD STRUCT PlanetographicGridVisible &quot;Sol/Venus&quot; true"/>
+    <Command Str="CMD STRUCT TerminatorVisible &quot;Sol/Venus&quot; true"/>
    </AppState>
   </Instant>
  </States>
